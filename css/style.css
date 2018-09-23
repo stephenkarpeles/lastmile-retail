@@ -18,6 +18,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+main {
+  overflow: hidden; }
+
 svg {
   display: block; }
 
@@ -135,6 +138,39 @@ h3 {
     background: #868686; }
     .header__menu span:not(:last-child) {
       margin-bottom: 5px; }
+
+.footer {
+  background: #330c48;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ebe8df;
+  font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+  font-weight: 600; }
+  .footer a {
+    color: #ebe8df; }
+  .footer__container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    align-items: center; }
+  .footer__address {
+    width: 250px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0; }
+  .footer__right-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__social-menu li {
+    list-style-type: none;
+    display: inline-block; }
+  .footer__cta {
+    margin-left: 30px; }
 
 .hero {
   background-size: cover;

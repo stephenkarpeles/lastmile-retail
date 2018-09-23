@@ -21,6 +21,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  overflow: hidden;
+}
+
 svg {
   display: block;
 }

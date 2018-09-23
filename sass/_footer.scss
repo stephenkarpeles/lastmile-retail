@@ -1,0 +1,47 @@
+.footer {
+	background: $secondary-color;	
+	font-size: 14px;
+	line-height: 17px;
+	color: $text-color-light;
+	font-family: $sans-serif-semibold;
+	font-weight: 600;
+
+	a {
+		color: $text-color-light;
+	}
+
+	&__container {
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 20px;
+		align-items: center;
+	}
+
+	&__address {
+		width: 250px;
+		margin: 0 auto;	
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
+	&__right-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__social-menu {
+		li {
+			list-style-type: none;
+			display: inline-block;
+		}
+	}
+
+	&__cta {
+		margin-left: 30px;
+	}
+}
