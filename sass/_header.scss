@@ -1,0 +1,39 @@
+.header {
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		align-items: center;
+	}
+
+	&__logo {
+		img {
+      width: 264px;
+		  height: auto;
+		}		
+	} 
+
+	&__right-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__menu {
+		margin-left: 40px;
+
+		span {
+			position: relative;
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $gray-1;
+
+      &:not(:last-child) {
+        margin-bottom: .25em;
+      }
+		}
+	}
+}
