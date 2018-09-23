@@ -1,18 +1,32 @@
 .header {
 	&__container {
+		position: relative;
 		width: 90%;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
-		padding: 20px;
+		padding: 40px 20px;
 		align-items: center;
 	}
 
+	&__tagline {
+		font-weight: 600;
+		font-size: 18px;
+		font-family: $sans-serif-semibold;
+		text-transform: uppercase;
+		color: $primary-color;
+	}
+
 	&__logo {
+		width: 264px;
+		margin: 0 auto;	
+		position: absolute;
+		left: 0;
+		right: 0;
+
 		img {
-      width: 264px;
-		  height: auto;
-		}		
+			width: 264px;
+		}
 	} 
 
 	&__right-block {
@@ -21,8 +35,26 @@
 		align-items: center;
 	}
 
+	&__page-marker {
+		position: relative;
+		text-transform: lowercase;
+		color: $tertiary-color;
+		font-family: $sans-serif-semibold;
+		margin-top: 5px;
+		font-size: 18px;
+
+		&::before {
+			width: 61px;
+			height: 4px;
+			position: absolute;
+			top: -8px;
+			content: '';
+			background: $tertiary-color;
+		}
+	}
+
 	&__menu {
-		margin-left: 40px;
+		margin-left: 60px;
 
 		span {
 			position: relative;
@@ -32,7 +64,7 @@
       background: $gray-1;
 
       &:not(:last-child) {
-        margin-bottom: .25em;
+        margin-bottom: 5px;
       }
 		}
 	}

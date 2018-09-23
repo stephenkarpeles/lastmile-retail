@@ -2,14 +2,22 @@
 $sans-serif: 'SharpSansBook', Helvetica, Arial, sans-serif;
 $serif: 'TiemposText', Georgia, sans-serif;
 
+// Alt Font Stacks
+$sans-serif-italic: 'SharpSansBookItalic', Helvetica, Arial, sans-serif;
+$sans-serif-semibold: 'SharpSansSemibold', Helvetica, Arial, sans-serif;
+$sans-serif-semibold-italic: 'SharpSansSemiboldItalic', Helvetica, Arial, sans-serif;
+$sans-serif-bold: 'SharpSansBold', Helvetica, Arial, sans-serif;
+$sans-serif-bold-italic: 'SharpSansBoldItalic', Helvetica, Arial, sans-serif;
+$serif-headline: 'TiemposHeadline', Georgia, sans-serif;
+
 // Colors
-$primary-color: 			#35b3a7;
-$secondary-color: 		#330c48;
-$tertiary-color: 			#ec4252;
+$primary-color: #35b3a7;
+$secondary-color: #330c48;
+$tertiary-color: #ec4252;
 
-$gray-1: 							#868686;
+$gray-1: #868686;
 
-$text-color-light:		#ebe8df; 
+$text-color-light: #ebe8df; 
 
 // Layout
 $container-width: 90%;
