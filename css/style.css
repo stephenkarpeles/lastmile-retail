@@ -1,10 +1,60 @@
-html, body {
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
   margin: 0;
   padding: 0; }
 
 body {
   background: white;
-  font-family: "SharpSansBook", Helvetica, Arial, sans-serif; }
+  font-family: "SharpSansBook", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+svg {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+@media print {
+  .header,
+  .footer {
+    display: none; } }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0; }
+
+p {
+  margin-bottom: 20px; }
+
+h1 {
+  font-family: "TiemposHeadline", Georgia, sans-serif;
+  font-size: 40px;
+  line-height: 47px; }
+
+h2 {
+  font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 33px; }
+
+h3 {
+  font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase; }
 
 @font-face {
   font-family: SharpSansBook;
@@ -50,13 +100,13 @@ body {
   text-transform: uppercase;
   color: #35b3a7; }
 .header__logo {
-  width: 264px;
+  width: 318px;
   margin: 0 auto;
   position: absolute;
   left: 0;
   right: 0; }
   .header__logo img {
-    width: 264px; }
+    width: 318px; }
 .header__right-block {
   display: flex;
   justify-content: space-between;
@@ -85,5 +135,28 @@ body {
     background: #868686; }
     .header__menu span:not(:last-child) {
       margin-bottom: 5px; }
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 470px;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .hero h1,
+  .hero p {
+    color: #ebe8df; }
+  .hero h1 {
+    width: 240px;
+    margin-bottom: 10px; }
+  .hero p {
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+  .hero__copy {
+    width: 360px; }
+  .hero--home {
+    background-image: url("../img/banners/hero-home.png"); }
 
 /*# sourceMappingURL=style.css.map */

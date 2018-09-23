@@ -1,4 +1,37 @@
-// Sans Serif
+h1, 
+h2, 
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: $serif-headline;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+h2 {
+  font-family: $sans-serif-semibold;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+h3 {
+  font-family: $sans-serif-semibold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+// Font Faces - Sans Serif
 @font-face {
   font-family: SharpSansBook;
   src: url('../fonts/SharpSansDisplayNo1-Book.woff2') format('woff2'), 
@@ -35,7 +68,7 @@
     url('../fonts/SharpSansDisplayNo1-SemiboldItalic.woff') format('woff');
 }
 
-// Serif
+// Font Faces - Serif
 @font-face {
   font-family: TiemposHeadline;
   src: url('../fonts/TiemposHeadline-Black.woff2') format('woff2'), 
