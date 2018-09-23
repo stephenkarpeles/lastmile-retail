@@ -140,22 +140,22 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 470px;
   width: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 70px 0; }
   .hero h1,
   .hero p {
-    color: #ebe8df; }
+    color: #ebe8df;
+    max-width: 100%; }
   .hero h1 {
     width: 240px;
     margin-bottom: 10px; }
   .hero p {
+    width: 360px;
     font-size: 24px;
     line-height: 28px;
     font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
-  .hero__copy {
-    width: 360px; }
   .hero--home {
     background-image: url("../img/banners/hero-home.png"); }
 
