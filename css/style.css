@@ -16,10 +16,14 @@ body {
   font-size: 16px;
   line-height: 1.375;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 main {
-  overflow: hidden; }
+  overflow: hidden;
+  flex: 1; }
 
 svg {
   display: block; }

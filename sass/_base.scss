@@ -19,10 +19,16 @@ body {
 	line-height: 1.375;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // Code below for sticky footer
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
   overflow: hidden;
+  // Code below for sticky footer
+  flex: 1;
 }
 
 svg {
