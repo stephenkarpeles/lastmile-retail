@@ -13,15 +13,15 @@
 				<div class="footer__right-block">
 					<div class="footer__social-menu">
 						<ul>
-							<li><a href="">Email</a></li>
-							<li><a href="">FB</a></li>
-							<li><a href="">Twitter</a></li>
-							<li><a href="">G+</a></li>
+							<li><a href=""><i class="fas fa-envelope"></i></a></li>
+							<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href=""><i class="fab fa-twitter"></i></a></li>
+							<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
 						</ul>
 					</div>
 
 					<div class="footer__cta">
-						<a class="btn btn--primary">Demo</a>
+						<a class="btn btn--primary btn--medium">Demo</a>
 					</div>
 				</div>
 			</div>

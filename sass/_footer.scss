@@ -38,6 +38,16 @@
 		li {
 			list-style-type: none;
 			display: inline-block;
+			margin-left: 5px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		a {
+			padding: 5px;
+			font-size: 23px;
 		}
 	}
 
