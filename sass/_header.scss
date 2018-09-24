@@ -3,7 +3,7 @@
 
 	height: 75px;
 
-	@include mq(tablet) {
+	@include mq(ipad) {
 		height: 115px;
 	}
 
@@ -16,28 +16,60 @@
 		padding: 22px 0;
 		align-items: center;
 
-		@include mq(tablet) {
+		@include mq(ipad) {
 			padding: 40px 0;
 		}
 	}
 
 	&__tagline {
 		font-weight: 600;
-		font-size: 18px;
+		font-size: 17px;
 		font-family: $sans-serif-semibold;
 		text-transform: uppercase;
 		color: $primary-color;
+		display: none;
+
+		@include mq(ipad) {
+			display: block;
+		}
+
+		@include mq(desktop) {
+			font-size: 18px;
+		}
 	}
 
 	&__logo {
-		width: 318px;
-		margin: 0 auto;	
+		width: 195px;
+		height: auto;
+		margin: 0;	
 		position: absolute;
-		left: 0;
-		right: 0;
+		left: -17px; // account for padding within logo image
+		right: auto;
+		top: 14px;
 
 		img {
+			width: 195px;
+		}
+
+		@include mq(ipad) {
+			width: 280px;
+			margin: 0 auto;	
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: auto;
+
+			img {
+				width: 280px;
+			}
+		}
+
+		@include mq(desktop) {
 			width: 318px;
+
+			img {
+				width: 318px;
+			}
 		}
 	} 
 
@@ -54,6 +86,7 @@
 		font-family: $sans-serif-semibold;
 		margin-top: 5px;
 		font-size: 18px;
+		display: none;
 
 		&::before {
 			width: 61px;
@@ -63,14 +96,26 @@
 			content: '';
 			background: $tertiary-color;
 		}
+
+		@include mq(ipad) {
+			display: block;
+		}
 	}
 
 	&__menu-trigger {
-		position: relative;
+		position: absolute;
+		right: 0;
+		top: 23px;
 		z-index: 5000;
 		margin-left: 55px;
 		cursor: pointer;
 		padding: 5px 0 5px 5px;
+
+		@include mq(ipad) {
+			position: relative;
+			top: auto;
+			right: auto;
+		}
 
 		span {
 			position: relative;
@@ -85,7 +130,8 @@
       }
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 		  span {
 		  	background: darken($gray-1, 20%);
 		  }
@@ -123,7 +169,7 @@
 		padding-top: 65px;
 		display: none;
 
-		@include mq(tablet) {
+		@include mq(ipad) {
 			top: 115px; // height of .header
 			padding-right: 5%;
 			padding-top: 0;
@@ -138,6 +184,11 @@
 			}
 
 			@include mq(desktop) {
+				width: 35vw;
+				left: 65vw;
+			}
+
+			@include mq(container-max) {
 				width: 30vw;
 				left: 70vw;
 			}
@@ -146,17 +197,31 @@
 		ul {
 			padding: 0;
 			margin: 0 0 20px;
+			width: 100%;
 		}
 
 		li {
 			list-style-type: none;
-		}
+			margin-bottom: 5px;
 
-		a {
-			width: 100%;
-			font-size: 22px;
-			line-height: 39px;
-			font-family: $sans-serif-semibold;
+			a {
+				display: inline-block;
+				width: 100%;
+				font-size: 22px;
+				line-height: 39px;
+				color: $secondary-color;
+				font-family: $sans-serif-semibold;
+				transition: transform .25s ease;
+
+				&:hover,
+				&:focus {
+					color: lighten($secondary-color, 20%);
+
+					@include mq(ipad) {
+						transform: translateX(5px);
+					}
+				}
+			}
 		}
 
 		#{$self}__container {
@@ -168,6 +233,10 @@
 			text-align: left;
 
 			@include mq(tablet) {
+				padding: 20px 5vw 20px 30px;
+			}
+
+			@include mq(ipad) {
 				padding: 20px 0 20px 30px;
 			}
 		}
@@ -176,6 +245,8 @@
 			width: 100%;
 			font-weight: 700;
 			font-family: $sans-serif-bold;
+			color: white;
+			line-height: 39px;
 		}
 	}
 }

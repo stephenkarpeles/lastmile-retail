@@ -42,10 +42,10 @@
           <nav class="header__nav">
             <div class="header__container">
               <ul>
-                <li><a href="">Menu Item 1</a></li>
-                <li><a href="">Menu Item 1</a></li>
-                <li><a href="">Menu Item 1</a></li>
-                <li><a href="">Menu Item 1</a></li>
+                <li><a href="#">Menu Item 1</a></li>
+                <li><a href="#">Menu Item 2</a></li>
+                <li><a href="#">Menu Item 3</a></li>
+                <li><a href="#">Menu Item 4</a></li>
               </ul>
               <a class="btn btn--primary btn--medium">Demo</a>
             </div>
