@@ -26,9 +26,23 @@ body {
 }
 
 main {
+  position: relative;
   overflow: hidden;
   // Code below for sticky footer
   flex: 1;
+
+  .has-open-nav & {
+    &:after {
+      position: absolute;
+      content: '';
+      background: rgba(black, .55);
+      z-index: 100;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
 }
 
 svg {

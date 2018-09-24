@@ -1,0 +1,25 @@
+.btn,
+a.btn {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	transition: all ease .15s;
+
+	&:hover {
+		opacity: .9;
+	}
+
+	&--medium {
+		font-size: 20px;
+		line-height: 25px;
+		padding: 5px 20px;
+	}
+
+	&--primary {
+		background: $primary-color;
+		color: white;
+		text-transform: uppercase;
+		font-family: $sans-serif-bold;
+		font-weight: 700;
+	}
+}

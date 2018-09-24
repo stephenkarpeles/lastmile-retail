@@ -33,11 +33,23 @@
             <span>Home</span>
           </div>
 
-          <div class="header__menu">
+          <div class="header__menu-trigger">
             <span></span>
             <span></span>
             <span></span>
-          </div>   
+          </div> 
+
+          <nav class="header__nav">
+            <div class="header__container">
+              <ul>
+                <li><a href="">Menu Item 1</a></li>
+                <li><a href="">Menu Item 1</a></li>
+                <li><a href="">Menu Item 1</a></li>
+                <li><a href="">Menu Item 1</a></li>
+              </ul>
+              <a class="btn btn--primary btn--medium">Demo</a>
+            </div>
+          </nav>  
         </div> 
 
       </div>

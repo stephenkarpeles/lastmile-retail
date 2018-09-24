@@ -21,7 +21,7 @@
 					</div>
 
 					<div class="footer__cta">
-						<button>Demo</button>
+						<a class="btn btn--primary">Demo</a>
 					</div>
 				</div>
 			</div>
