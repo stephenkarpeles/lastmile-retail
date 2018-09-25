@@ -6,7 +6,8 @@ $breakpoints: (
   full-nav: 700px,
   ipad: 768px,
   desktop: 1024px,
-  container-max: 1100px
+  container-max: 1100px,
+  large: 1260px
 );
 
 @mixin mq($breakpoint, $rule:min-width) {

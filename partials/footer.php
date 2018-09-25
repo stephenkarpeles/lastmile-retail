@@ -3,7 +3,7 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__copyright">
-					&copy; Copyright Lastmile Retail, Inc <?php echo date('Y'); ?>. All Rights Reserved.
+					&copy; Copyright Lastmile Retail, Inc <?php echo date('Y'); ?>. <span></span>All Rights Reserved.
 				</div>
 
 				<div class="footer__address">
