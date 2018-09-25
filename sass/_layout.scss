@@ -3,6 +3,10 @@
 	max-width: $container-max-width;
 	margin: 0 auto;
 	position: relative;
+
+	&--wide {
+		max-width: $container-wide-max-width;
+	}
 }
 
 section {

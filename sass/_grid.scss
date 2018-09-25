@@ -1,0 +1,24 @@
+$gutter-width: 20px;
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  .grid--half & {
+  	width: calc(50% - $gutter-width);
+  }
+
+  .grid--thirds & {
+  	width: calc(33.33% - $gutter-width);
+  }
+
+  .grid--quarters & {
+  	width: calc(25% - #{$gutter-width});
+  }
+
+  .grid--fifths & {
+  	width: calc(20% - #{$gutter-width});
+  }
+}

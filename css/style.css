@@ -1,3 +1,12 @@
+.no-padding {
+  padding: 0; }
+
+.no-top-padding {
+  padding-top: 0; }
+
+.no-bottom-padding {
+  padding-bottom: 0; }
+
 *,
 *::before,
 *::after {
@@ -131,11 +140,26 @@ a.btn {
     font-family: "SharpSansBold", Helvetica, Arial, sans-serif;
     font-weight: 700; }
 
+.grid {
+  display: flex;
+  justify-content: space-between; }
+
+.grid--half .col {
+  width: calc(50% - $gutter-width); }
+.grid--thirds .col {
+  width: calc(33.33% - $gutter-width); }
+.grid--quarters .col {
+  width: calc(25% - 20px); }
+.grid--fifths .col {
+  width: calc(20% - 20px); }
+
 .container {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
   position: relative; }
+  .container--wide {
+    max-width: 1280px; }
 
 section {
   padding: 40px 0; }

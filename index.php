@@ -25,6 +25,17 @@
   	</div>
   </section>
 
+  <section class="no-top-padding">
+  	<div class="container container--wide">
+  		<div class="grid grid--quarters">
+  			<div class="col"><img src="img/screenshot-selected.png" alt=""></div>
+  			<div class="col"><img src="img/screenshot.png" alt=""></div>
+  			<div class="col"><img src="img/screenshot.png" alt=""></div>
+  			<div class="col"><img src="img/screenshot.png" alt=""></div>
+  		</div>
+  	</div>
+  </section>
+
 <?php include 'partials/footer.php'; ?>
 
     
