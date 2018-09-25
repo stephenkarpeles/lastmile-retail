@@ -1,0 +1,33 @@
+.section--cta-block {
+	margin: 60px 0;
+
+	h2 {
+		width: 630px;
+		max-width: 100%;
+	}
+
+	p {
+		width: 650px;
+		max-width: 100%;
+		font-size: 20px;
+		line-height: 25px;
+		color: $quaternary-color;
+		font-family: $sans-serif-semibold;
+	}
+
+	.flex-div {
+		display: flex;
+		justify-content: space-between;
+		align-items: bottom;
+	}
+
+	@include mq(container-max, 'max-width') {
+		h2 {
+      width: 600px;
+		}
+
+		p {
+			width: 620px;
+		}
+	}
+}

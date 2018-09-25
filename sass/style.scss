@@ -8,8 +8,6 @@
 @import 'typography';
 @import 'buttons';
 
-// Components
-
 // Layout
 @import 'grid';
 @import 'layout';
@@ -18,6 +16,9 @@
 @import 'header';
 @import 'footer';
 @import 'hero';
+
+// Components
+@import 'cta-block';
 
 // Pages
 @import 'homepage';

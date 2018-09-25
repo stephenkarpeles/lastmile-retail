@@ -28,6 +28,8 @@ p.intro {
 }
 
 .fact-block {
+	margin-top: 40px;
+
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -41,7 +43,7 @@ p.intro {
     text-align: center;
     color: $gray-2;
     font-size: 17px;
-    line-height: 25px;
+    line-height: 26px;
     font-family: $sans-serif-semibold;
 
     &:nth-child(1) {

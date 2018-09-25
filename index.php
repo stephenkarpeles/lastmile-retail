@@ -59,6 +59,16 @@
     </div>
   </section>
 
+  <section class="section--cta-block">
+    <div class="container">
+      <h2 class="heading-alt">From browse to buy, we bring your local advantage online.</h2>
+      <div class="flex-div">
+        <p>We understand the mindset, motivations and needs of local shoppers and give them what they demand—an easy way to find and buy in-stock nearby products and services online.</p>
+        <a class="btn btn--tag">Shopper Journey</a>
+      <div>
+    </div>
+  </section>
+
 <?php include 'partials/footer.php'; ?>
 
     

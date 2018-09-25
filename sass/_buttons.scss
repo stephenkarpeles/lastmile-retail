@@ -22,4 +22,52 @@ a.btn {
 		font-family: $sans-serif-bold;
 		font-weight: 700;
 	}
+
+  &--tag {
+	  background: $tertiary-color;
+	  font-family: $sans-serif-semibold;
+	  border-radius: 3px 0 0 3px;
+	  font-size: 20px;
+	  color: white;
+	  display: inline-block;
+	  height: 64px;
+	  line-height: 64px;
+	  padding: 0 51px 0 20px;
+	  position: relative;
+	  margin: 0 10px 10px 0;
+	  text-decoration: none;
+	  -webkit-transition: color 0.2s;
+	  text-transform: lowercase;
+
+		&::before {
+		  background: #fff;
+		  border-radius: 9px;
+		  content: '';
+		  height: 9px;
+		  right: 20px;
+		  position: absolute;
+		  width: 9px;
+		  top: 29px;
+		}
+
+		&::after {
+		  background: white;
+		  border-bottom: 32px solid transparent;
+		  border-left: 20px solid $tertiary-color;
+		  border-top: 32px solid transparent;
+		  content: '';
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		}
+
+		&:hover {
+		  background-color: darken($tertiary-color, 15%);
+		  color: white;
+		}
+
+		&:hover::after {
+		   border-left-color: darken($tertiary-color, 15%); 
+		}
+	}
 }
