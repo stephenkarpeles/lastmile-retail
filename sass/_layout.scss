@@ -2,4 +2,9 @@
 	width: $container-width;
 	max-width: $container-max-width;
 	margin: 0 auto;
+	position: relative;
+}
+
+section {
+	padding: $section-padding 0;
 }

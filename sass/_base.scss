@@ -19,6 +19,7 @@ body {
 	line-height: 1.375;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $secondary-color;
   // Code below for sticky footer
   display: flex;
   min-height: 100vh;
@@ -51,6 +52,11 @@ svg {
 
 a {
 	text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 @media print {

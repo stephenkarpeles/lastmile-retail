@@ -1,0 +1,28 @@
+p.intro {
+	&--home {
+		width: 565px;
+		max-width: 100%;
+		margin-top: 25px;
+
+		@include mq(desktop, 'max-width') {
+			margin-top: 10px;
+		}
+
+		@include mq(desktop-narrow, 'max-width') {
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+}
+
+.intro-wrap {
+	&--home {
+		@include mq(desktop, 'max-width') {
+			margin-bottom: -$section-padding;
+		}
+
+		@include mq(desktop-narrow, 'max-width') {
+			margin-bottom: -$section-padding * 2;
+		}
+	}
+}

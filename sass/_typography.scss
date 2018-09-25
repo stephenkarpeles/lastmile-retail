@@ -10,6 +10,15 @@ p {
 
 p {
   padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 27px;
+
+  &.intro {
+    font-family: $sans-serif-semibold;
+    color: $primary-color;
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 h1 {

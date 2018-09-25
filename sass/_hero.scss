@@ -1,4 +1,6 @@
 .hero {
+  $self: &;
+
 	background-size: cover;
 	background-repeat: no-repeat;
   background-position: center center;
@@ -29,5 +31,22 @@
   
   &--home {
   	background-image: url('../img/banners/hero-home.png');
+
+    #{$self}__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      left: 440px;
+      bottom: -250px;
+
+      @include mq(desktop, 'max-width') {
+        width: 310px;
+        bottom: -200px;
+      }
+
+      @include mq(desktop-narrow, 'max-width') {
+        display: none;
+      }
+    }
   }
 }
