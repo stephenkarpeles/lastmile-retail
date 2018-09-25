@@ -142,7 +142,8 @@ a.btn {
 
 .grid {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .grid--half .col {
   width: calc(50% - $gutter-width); }
@@ -492,5 +493,71 @@ p.intro--home {
 @media screen and (max-width: 859px) {
   .intro-wrap--home {
     margin-bottom: -80px; } }
+
+.fact-block .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+.fact-block__fact {
+  position: relative;
+  width: 16.66%;
+  padding: 0 25px;
+  text-align: center;
+  color: #999999;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+  .fact-block__fact:nth-child(1) {
+    color: white; }
+    .fact-block__fact:nth-child(1)::before {
+      position: absolute;
+      z-index: -1;
+      color: #35b3a7;
+      left: 0;
+      right: 0;
+      top: 38px;
+      font-size: 190px;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f041"; }
+      @media screen and (max-width: 859px) {
+        .fact-block__fact:nth-child(1)::before {
+          font-size: 175px;
+          top: 30px; } }
+  @media screen and (max-width: 1023px) {
+    .fact-block__fact {
+      width: 33.33%;
+      padding: 0 10%;
+      margin-bottom: 80px; } }
+  @media screen and (max-width: 859px) {
+    .fact-block__fact {
+      width: 33.33%;
+      padding: 0 8%; } }
+  @media screen and (max-width: 639px) {
+    .fact-block__fact {
+      width: 50%;
+      padding: 0 12%;
+      font-size: 16px;
+      line-height: 23px;
+      margin-bottom: 90px; } }
+  @media screen and (max-width: 479px) {
+    .fact-block__fact {
+      margin-bottom: 65px; } }
+  .fact-block__fact span {
+    display: block; }
+  .fact-block__fact .fa-arrow-up {
+    font-size: 13px;
+    margin-left: 5px;
+    position: relative;
+    top: -2px; }
+  .fact-block__fact .fa-map-marker {
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    color: #35b3a7; }
 
 /*# sourceMappingURL=style.css.map */

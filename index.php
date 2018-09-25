@@ -36,6 +36,29 @@
   	</div>
   </section>
 
+  <section class="fact-block">
+    <div class="container">
+      <div class="fact-block__fact">
+        <span>7,000,000</span>daily in-stock items
+      </div>
+      <div class="fact-block__fact">
+        <span>10k+<i class="fas fa-arrow-up"></i></span>first-page local searches
+      </div>
+      <div class="fact-block__fact">
+        <span>10%+</span>visit to lead conversion rates
+      </div>
+      <div class="fact-block__fact">
+        <span>5x<i class="fas fa-arrow-up"></i></span>click-thru rates &amp; store finder leads
+      </div>
+      <div class="fact-block__fact">
+        <span>1,000,000+</span>local shoppers reached
+      </div>
+      <div class="fact-block__fact">
+        <span>14,000+</span>stores serviced
+      </div>
+    </div>
+  </section>
+
 <?php include 'partials/footer.php'; ?>
 
     

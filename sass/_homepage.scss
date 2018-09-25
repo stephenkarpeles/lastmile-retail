@@ -26,3 +26,87 @@ p.intro {
 		}
 	}
 }
+
+.fact-block {
+	.container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__fact {
+		position: relative;
+    width: 16.66%;
+    padding: 0 25px;
+    text-align: center;
+    color: $gray-2;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: $sans-serif-semibold;
+
+    &:nth-child(1) {
+    	color: white;
+
+    	&::before {
+    		position: absolute;
+    		z-index: -1;
+    		color: $primary-color;
+    		left: 0;
+    		right: 0;
+    		top: 38px;
+    		font-size: 190px;
+		    font-style: normal;
+		    font-variant: normal;
+		    text-rendering: auto;
+		    -webkit-font-smoothing: antialiased;
+		    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f041";
+
+		    @include mq(desktop-narrow, 'max-width') {
+		    	font-size: 175px;
+		    	top: 30px;
+		    }
+		  }
+    }
+
+    @include mq(desktop, 'max-width') {
+	    width: 33.33%;
+	    padding: 0 10%;
+	    margin-bottom: 80px;
+    }
+
+    @include mq(desktop-narrow, 'max-width') {
+	    width: 33.33%;
+	    padding: 0 8%;
+    }
+
+    @include mq(tablet, 'max-width') {
+	    width: 50%;
+	    padding: 0 12%;	    
+    	font-size: 16px;
+    	line-height: 23px;
+	    margin-bottom: 90px;
+    }
+
+    @include mq(mobile-landscape, 'max-width') {
+    	margin-bottom: 65px;
+    }
+
+    span {
+    	display: block;
+    }
+
+    .fa-arrow-up {
+      font-size: 13px;
+      margin-left: 5px;
+      position: relative;
+      top: -2px;
+    }
+
+    .fa-map-marker {
+    	position: absolute;
+    	height: 120%;
+    	width: 100%;
+    	color: $primary-color;
+    }
+	}
+}
