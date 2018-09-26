@@ -1,0 +1,49 @@
+// Font Faces - Sans Serif
+@font-face {
+  font-family: SharpSansBook;
+  src: url('../fonts/SharpSansDisplayNo1-Book.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: SharpSansBookItalic;
+  src: url('../fonts/SharpSansDisplayNo1-BookItalic.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-BookItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: SharpSansBold;
+  src: url('../fonts/SharpSansDisplayNo1-Bold.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: SharpSansBoldItalic;
+  src: url('../fonts/SharpSansDisplayNo1-BoldItalic.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: SharpSansSemibold;
+  src: url('../fonts/SharpSansDisplayNo1-Semibold.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: SharpSansSemiboldItalic;
+  src: url('../fonts/SharpSansDisplayNo1-SemiboldItalic.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-SemiboldItalic.woff') format('woff');
+}
+
+// Font Faces - Serif
+@font-face {
+  font-family: TiemposHeadline;
+  src: url('../fonts/TiemposHeadline-Black.woff2') format('woff2'), 
+    url('../fonts/TiemposHeadline-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: TiemposText;
+  src: url('../fonts/TiemposText-Regular.woff2') format('woff2'), 
+    url('../fonts/TiemposText-Regular.woff') format('woff');
+}
