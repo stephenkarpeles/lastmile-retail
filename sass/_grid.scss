@@ -23,3 +23,9 @@ $gutter-width: 20px;
   	width: calc(20% - #{$gutter-width});
   }
 }
+
+@include mq(ipad, 'max-width') {
+  .grid--quarters .col {
+    width: calc(50% - #{$gutter-width});
+  }
+}
