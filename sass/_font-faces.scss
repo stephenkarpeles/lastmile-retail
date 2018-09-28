@@ -35,6 +35,18 @@
     url('../fonts/SharpSansDisplayNo1-SemiboldItalic.woff') format('woff');
 }
 
+@font-face {
+  font-family: SharpSansBlack;
+  src: url('../fonts/SharpSansDisplayNo1-Black.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: SharpSansBlackItalic;
+  src: url('../fonts/SharpSansDisplayNo1-BlackItalic.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-BlackItalic.woff') format('woff');
+}
+
 // Font Faces - Serif
 @font-face {
   font-family: TiemposHeadline;

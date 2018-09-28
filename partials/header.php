@@ -4,13 +4,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lastmile Retail</title>
-    <meta name="description" content="">
+
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>">
+    <?php
+      // If canonical URL is specified, include canonical link element
+      if($pageCanonical) {
+        echo '<link rel="canonical" href="' . $pageCanonical . '">';
+      }
+      // If meta robots content is specified, include robots meta tag
+      if($pageRobots) {
+        echo '<meta name="robots" content="' . $pageRobots . '">';
+      }
+    ?>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">

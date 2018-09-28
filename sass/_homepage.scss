@@ -39,6 +39,7 @@ p.intro {
 	&__fact {
 		position: relative;
     width: 16.66%;
+    min-height: 100px;
     padding: 0 25px;
     text-align: center;
     color: $gray-2;
@@ -46,8 +47,18 @@ p.intro {
     line-height: 26px;
     font-family: $sans-serif-semibold;
 
+    span {
+    	font-weight: 900;
+    	font-family: $sans-serif-black;
+    	color: darken($gray-2, 9%);
+    }
+
     &:nth-child(1) {
     	color: white;
+
+    	span {
+    		color: white;
+    	}
 
     	&::before {
     		position: absolute;
@@ -69,7 +80,8 @@ p.intro {
 		    }
 
 		    @include mq(tablet, 'max-width') {
-		    	top: 33px;
+		    	font-size: 165px;
+		    	top: 40px;
 		    }
 		  }
     }
@@ -88,12 +100,11 @@ p.intro {
 
     @include mq(desktop-narrow, 'max-width') {
 	    width: 33.33%;
-	    padding: 0 8%;
     }
 
     @include mq(tablet, 'max-width') {
 	    width: 50%;
-	    padding: 0 12%;	    
+	    padding: 0 15%;	    
     	font-size: 16px;
     	line-height: 23px;
 	    margin-bottom: 90px;
@@ -106,6 +117,7 @@ p.intro {
 
     @include mq(mobile-landscape, 'max-width') {
     	margin-bottom: 65px;
+    	padding: 0 12%;
     }
 
     span {

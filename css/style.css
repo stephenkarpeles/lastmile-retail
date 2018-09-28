@@ -17,6 +17,12 @@
   font-family: SharpSansSemiboldItalic;
   src: url("../fonts/SharpSansDisplayNo1-SemiboldItalic.woff2") format("woff2"), url("../fonts/SharpSansDisplayNo1-SemiboldItalic.woff") format("woff"); }
 @font-face {
+  font-family: SharpSansBlack;
+  src: url("../fonts/SharpSansDisplayNo1-Black.woff2") format("woff2"), url("../fonts/SharpSansDisplayNo1-Black.woff") format("woff"); }
+@font-face {
+  font-family: SharpSansBlackItalic;
+  src: url("../fonts/SharpSansDisplayNo1-BlackItalic.woff2") format("woff2"), url("../fonts/SharpSansDisplayNo1-BlackItalic.woff") format("woff"); }
+@font-face {
   font-family: TiemposHeadline;
   src: url("../fonts/TiemposHeadline-Black.woff2") format("woff2"), url("../fonts/TiemposHeadline-Black.woff") format("woff"); }
 @font-face {
@@ -600,14 +606,21 @@ p.intro--home {
   .fact-block__fact {
     position: relative;
     width: 16.66%;
+    min-height: 100px;
     padding: 0 25px;
     text-align: center;
     color: #999999;
     font-size: 17px;
     line-height: 26px;
     font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+    .fact-block__fact span {
+      font-weight: 900;
+      font-family: "SharpSansBold", Helvetica, Arial, sans-serif;
+      color: #828282; }
     .fact-block__fact:nth-child(1) {
       color: white; }
+      .fact-block__fact:nth-child(1) span {
+        color: white; }
       .fact-block__fact:nth-child(1)::before {
         position: absolute;
         z-index: -1;
@@ -629,7 +642,8 @@ p.intro--home {
             top: 30px; } }
         @media screen and (max-width: 639px) {
           .fact-block__fact:nth-child(1)::before {
-            top: 33px; } }
+            font-size: 165px;
+            top: 40px; } }
     @media screen and (max-width: 1023px) {
       .fact-block__fact {
         width: 33.33%;
@@ -639,12 +653,11 @@ p.intro--home {
           margin-bottom: 0; } }
     @media screen and (max-width: 859px) {
       .fact-block__fact {
-        width: 33.33%;
-        padding: 0 8%; } }
+        width: 33.33%; } }
     @media screen and (max-width: 639px) {
       .fact-block__fact {
         width: 50%;
-        padding: 0 12%;
+        padding: 0 15%;
         font-size: 16px;
         line-height: 23px;
         margin-bottom: 90px; }
@@ -652,7 +665,8 @@ p.intro--home {
           margin-bottom: 0; } }
     @media screen and (max-width: 479px) {
       .fact-block__fact {
-        margin-bottom: 65px; } }
+        margin-bottom: 65px;
+        padding: 0 12%; } }
     .fact-block__fact span {
       display: block; }
     .fact-block__fact .fa-arrow-up {

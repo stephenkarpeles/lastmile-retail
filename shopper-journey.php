@@ -1,12 +1,3 @@
-<?php
-  // Define variables for SEO
-  $pageTitle = 'Lastmile Retail';
-  $pageDescription = 'Description for this page goes here.';
-  
-  include('partials/header.php'); 
-?>
-
-
 <?php include 'partials/header.php'; ?>
 
   <section class="hero hero--home">
@@ -79,5 +70,3 @@
   </section>
 
 <?php include 'partials/footer.php'; ?>
-
-    
