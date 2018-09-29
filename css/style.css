@@ -28,6 +28,11 @@
 @font-face {
   font-family: TiemposText;
   src: url("../fonts/TiemposText-Regular.woff2") format("woff2"), url("../fonts/TiemposText-Regular.woff") format("woff"); }
+@keyframes fade-in-1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .no-padding {
   padding: 0; }
 
@@ -59,7 +64,8 @@ body {
   color: #330c48;
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  animation: fade-in-1 .75s ease; }
 
 main {
   position: relative;
@@ -631,23 +637,24 @@ p.intro--home {
     cursor: pointer; }
     .fact-block__fact p {
       font-size: 18px;
-      line-height: 23px; }
+      line-height: 22px; }
     .fact-block__fact span {
       font-weight: 900;
       font-family: "SharpSansBold", Helvetica, Arial, sans-serif;
       color: #828282; }
-    .fact-block__fact:hover {
+    .fact-block__fact:nth-child(1), .fact-block__fact:hover {
       color: white; }
-      .fact-block__fact:hover span {
+      .fact-block__fact:nth-child(1) span, .fact-block__fact:hover span {
         color: white; }
-      .fact-block__fact:hover::before {
+      .fact-block__fact:nth-child(1)::before, .fact-block__fact:hover::before {
+        animation: fade-in-1 .25s ease;
         position: absolute;
         z-index: -1;
         color: #35b3a7;
         opacity: 1;
         left: 0;
         right: 0;
-        top: 50px;
+        top: 48px;
         font-size: 190px;
         font-style: normal;
         font-variant: normal;
@@ -657,11 +664,11 @@ p.intro--home {
         font-weight: 900;
         content: "\f041"; }
         @media screen and (max-width: 859px) {
-          .fact-block__fact:hover::before {
+          .fact-block__fact:nth-child(1)::before, .fact-block__fact:hover::before {
             font-size: 175px;
             top: 30px; } }
         @media screen and (max-width: 639px) {
-          .fact-block__fact:hover::before {
+          .fact-block__fact:nth-child(1)::before, .fact-block__fact:hover::before {
             font-size: 165px;
             top: 40px; } }
     @media screen and (max-width: 1023px) {
