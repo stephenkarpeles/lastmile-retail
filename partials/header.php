@@ -40,13 +40,13 @@
           <span>From Browse to Buy</span>
         </div>
 
-        <div class="header__logo">
+        <a href="/" class="header__logo">
           <img src="img/logo.svg" alt="Lastmile Retail">
-        </div>
+        </a>
 
         <div class="header__right-block">
           <div class="header__page-marker">
-            <span>Home</span>
+            <span><?php echo $navPageName; ?></span>
           </div>
 
           <div class="header__menu-trigger">
@@ -58,8 +58,8 @@
           <nav class="header__nav">
             <div class="header__container">
               <ul>
-                <li><a href="#">Menu Item 1</a></li>
-                <li><a href="#">Menu Item 2</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shopper-journey.php">Shopper Journey</a></li>
                 <li><a href="#">Menu Item 3</a></li>
                 <li><a href="#">Menu Item 4</a></li>
               </ul>

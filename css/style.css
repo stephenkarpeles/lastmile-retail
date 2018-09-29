@@ -509,7 +509,8 @@ section {
     max-width: 100%; }
   .hero h1 {
     width: 240px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-transform: lowercase; }
   .hero p {
     width: 360px;
     font-size: 24px;
@@ -531,6 +532,21 @@ section {
           bottom: -200px; } }
       @media screen and (max-width: 859px) {
         .hero--home .hero__icon {
+          display: none; } }
+  .hero--shopper-journey {
+    background-image: url("../img/banners/hero-home.png"); }
+    .hero--shopper-journey .hero__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      left: 440px;
+      bottom: -250px; }
+      @media screen and (max-width: 1023px) {
+        .hero--shopper-journey .hero__icon {
+          width: 310px;
+          bottom: -200px; } }
+      @media screen and (max-width: 859px) {
+        .hero--shopper-journey .hero__icon {
           display: none; } }
 
 .section--cta-block {
@@ -607,27 +623,31 @@ p.intro--home {
     position: relative;
     width: 16.66%;
     min-height: 100px;
-    padding: 0 25px;
+    padding: 0 35px;
+    line-height: 26px;
     text-align: center;
     color: #999999;
-    font-size: 17px;
-    line-height: 26px;
-    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+    cursor: pointer; }
+    .fact-block__fact p {
+      font-size: 18px;
+      line-height: 23px; }
     .fact-block__fact span {
       font-weight: 900;
       font-family: "SharpSansBold", Helvetica, Arial, sans-serif;
       color: #828282; }
-    .fact-block__fact:nth-child(1) {
+    .fact-block__fact:hover {
       color: white; }
-      .fact-block__fact:nth-child(1) span {
+      .fact-block__fact:hover span {
         color: white; }
-      .fact-block__fact:nth-child(1)::before {
+      .fact-block__fact:hover::before {
         position: absolute;
         z-index: -1;
         color: #35b3a7;
+        opacity: 1;
         left: 0;
         right: 0;
-        top: 38px;
+        top: 50px;
         font-size: 190px;
         font-style: normal;
         font-variant: normal;
@@ -637,11 +657,11 @@ p.intro--home {
         font-weight: 900;
         content: "\f041"; }
         @media screen and (max-width: 859px) {
-          .fact-block__fact:nth-child(1)::before {
+          .fact-block__fact:hover::before {
             font-size: 175px;
             top: 30px; } }
         @media screen and (max-width: 639px) {
-          .fact-block__fact:nth-child(1)::before {
+          .fact-block__fact:hover::before {
             font-size: 165px;
             top: 40px; } }
     @media screen and (max-width: 1023px) {
@@ -658,7 +678,6 @@ p.intro--home {
       .fact-block__fact {
         width: 50%;
         padding: 0 15%;
-        font-size: 16px;
         line-height: 23px;
         margin-bottom: 90px; }
         .fact-block__fact:last-child, .fact-block__fact:nth-last-child(2) {

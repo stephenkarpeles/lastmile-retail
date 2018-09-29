@@ -18,6 +18,7 @@
   h1 {
   	width: 240px;
   	margin-bottom: 10px;
+    text-transform: lowercase;
   }
 
   p {
@@ -31,6 +32,27 @@
   
   &--home {
   	background-image: url('../img/banners/hero-home.png');
+
+    #{$self}__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      left: 440px;
+      bottom: -250px;
+
+      @include mq(desktop, 'max-width') {
+        width: 310px;
+        bottom: -200px;
+      }
+
+      @include mq(desktop-narrow, 'max-width') {
+        display: none;
+      }
+    }
+  }
+
+  &--shopper-journey {
+    background-image: url('../img/banners/hero-home.png');
 
     #{$self}__icon {
       display: block;

@@ -2,17 +2,15 @@
   // Define variables for SEO
   $pageTitle = 'Lastmile Retail';
   $pageDescription = 'Description for this page goes here.';
+  $navPageName = 'home';
   
   include('partials/header.php'); 
 ?>
 
-
-<?php include 'partials/header.php'; ?>
-
   <section class="hero hero--home">
     <div class="container">
       <div class="hero__copy">
-        <h1>unlock your local advantage online</h1>
+        <h1>Unlock Your Local Advantage Online</h1>
         <p>Lastmile bridges the gap between the 80% of shoppers that research online and the 90% of sales that happen offline.</p>
       </div>
       <div class="hero__icon">
@@ -48,22 +46,22 @@
   <section class="fact-block">
     <div class="container">
       <div class="fact-block__fact">
-        <span>7,000,000</span>daily in-stock items
+        <p><span>7,000,000</span>daily in-stock items</p>
       </div>
       <div class="fact-block__fact">
-        <span>10k+<i class="fas fa-arrow-up"></i></span>first-page local searches
+        <p><span>10k+<i class="fas fa-arrow-up"></i></span>first-page local searches</p>
       </div>
       <div class="fact-block__fact">
-        <span>10%+</span>visit to lead conversion rates
+        <p><span>10%+</span>visit to lead conversion rates</p>
       </div>
       <div class="fact-block__fact">
-        <span>5x<i class="fas fa-arrow-up"></i></span>click-thru rates &amp; store finder leads
+        <p><span>5x<i class="fas fa-arrow-up"></i></span>click-thru rates &amp; store finder leads</p>
       </div>
       <div class="fact-block__fact">
-        <span>1,000,000+</span>local shoppers reached
+        <p><span>1,000,000+</span>local shoppers reached</p>
       </div>
       <div class="fact-block__fact">
-        <span>14,000+</span>stores serviced
+        <p><span>14,000+</span>stores serviced</p>
       </div>
     </div>
   </section>
