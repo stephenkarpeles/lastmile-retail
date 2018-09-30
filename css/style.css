@@ -619,6 +619,14 @@ p.intro--home {
   .intro-wrap--home {
     margin-bottom: -80px; } }
 
+.grid--home-image-block img {
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+  transition: background .15s ease; }
+  .grid--home-image-block img:hover {
+    background: #d0cadd; }
+
 .fact-block {
   margin-top: 40px; }
   .fact-block .container {

@@ -27,6 +27,19 @@ p.intro {
 	}
 }
 
+.grid--home-image-block {
+	img {
+		cursor: pointer;
+		padding: 10px;
+		background: transparent;
+		transition: background .15s ease;
+
+		&:hover {
+      background: #d0cadd;
+		}
+	}
+}
+
 .fact-block {
 	margin-top: 40px;
 

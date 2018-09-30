@@ -34,8 +34,8 @@
 
   <section class="no-top-padding">
   	<div class="container container--wide">
-  		<div class="grid grid--quarters">
-  			<div class="col"><img src="img/screenshot-selected.png" alt=""></div>
+  		<div class="grid grid--quarters grid--home-image-block">
+  			<div class="col"><img src="img/screenshot.png" alt=""></div>
   			<div class="col"><img src="img/screenshot.png" alt=""></div>
   			<div class="col"><img src="img/screenshot.png" alt=""></div>
   			<div class="col"><img src="img/screenshot.png" alt=""></div>
