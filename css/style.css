@@ -508,7 +508,10 @@ section {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 80px 0; }
+  padding: 80px 0;
+  position: relative; }
+  .hero .container {
+    z-index: 5; }
   .hero h1,
   .hero p {
     color: #ebe8df;
@@ -540,7 +543,19 @@ section {
         .hero--home .hero__icon {
           display: none; } }
   .hero--shopper-journey {
-    background-image: url("../img/banners/hero-home.png"); }
+    background-image: url("../img/banners/banner-clothes-dark.jpg");
+    -webkit-filter: contrast(3);
+    filter: contrast(3); }
+    .hero--shopper-journey::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(53, 179, 167, 0.5); }
     .hero--shopper-journey .hero__icon {
       display: block;
       position: absolute;
