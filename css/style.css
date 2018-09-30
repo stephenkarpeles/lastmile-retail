@@ -642,11 +642,11 @@ p.intro--home {
       font-weight: 900;
       font-family: "SharpSansBold", Helvetica, Arial, sans-serif;
       color: #828282; }
-    .fact-block__fact:nth-child(1), .fact-block__fact:hover {
+    .fact-block__fact.is-active-fact-block, .fact-block__fact:hover {
       color: white; }
-      .fact-block__fact:nth-child(1) span, .fact-block__fact:hover span {
+      .fact-block__fact.is-active-fact-block span, .fact-block__fact:hover span {
         color: white; }
-      .fact-block__fact:nth-child(1)::before, .fact-block__fact:hover::before {
+      .fact-block__fact.is-active-fact-block::before, .fact-block__fact:hover::before {
         animation: fade-in-1 .25s ease;
         position: absolute;
         z-index: -1;
@@ -654,7 +654,7 @@ p.intro--home {
         opacity: 1;
         left: 0;
         right: 0;
-        top: 48px;
+        top: 50px;
         font-size: 190px;
         font-style: normal;
         font-variant: normal;
@@ -663,14 +663,6 @@ p.intro--home {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         content: "\f041"; }
-        @media screen and (max-width: 859px) {
-          .fact-block__fact:nth-child(1)::before, .fact-block__fact:hover::before {
-            font-size: 175px;
-            top: 30px; } }
-        @media screen and (max-width: 639px) {
-          .fact-block__fact:nth-child(1)::before, .fact-block__fact:hover::before {
-            font-size: 165px;
-            top: 40px; } }
     @media screen and (max-width: 1023px) {
       .fact-block__fact {
         width: 33.33%;
@@ -680,7 +672,8 @@ p.intro--home {
           margin-bottom: 0; } }
     @media screen and (max-width: 859px) {
       .fact-block__fact {
-        width: 33.33%; } }
+        width: 33.33%;
+        padding: 0 8%; } }
     @media screen and (max-width: 639px) {
       .fact-block__fact {
         width: 50%;
@@ -692,7 +685,7 @@ p.intro--home {
     @media screen and (max-width: 479px) {
       .fact-block__fact {
         margin-bottom: 65px;
-        padding: 0 12%; } }
+        padding: 0 10%; } }
     .fact-block__fact span {
       display: block; }
     .fact-block__fact .fa-arrow-up {

@@ -45,7 +45,7 @@
 
   <section class="fact-block">
     <div class="container">
-      <div class="fact-block__fact">
+      <div class="fact-block__fact is-active-fact-block">
         <p><span>7,000,000</span>daily in-stock items</p>
       </div>
       <div class="fact-block__fact">

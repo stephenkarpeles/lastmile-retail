@@ -8,3 +8,21 @@ if (headerTrigger) {
     document.body.classList.toggle('has-open-nav');
   });
 }
+
+// Homepage facts rollover script
+const activeFactBlock = document.querySelector('.fact-block__fact.is-active-fact-block');
+const factBlocks = document.querySelectorAll('.fact-block__fact');
+
+if (factBlocks !== null) {
+  [...factBlocks].forEach(factBlock => {
+    factBlock.addEventListener('mouseover', () => {
+      activeFactBlock.classList.remove('is-active-fact-block');  
+    });
+  });
+}
+
+
+
+
+
+
