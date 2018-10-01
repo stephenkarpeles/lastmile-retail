@@ -89,6 +89,7 @@
       @include mq(desktop, 'max-width') {
         width: 310px;
         bottom: -200px;
+        left: 38.5%;
       }
 
       @include mq(desktop-narrow, 'max-width') {

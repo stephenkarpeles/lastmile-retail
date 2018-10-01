@@ -602,7 +602,8 @@ section {
       @media screen and (max-width: 1023px) {
         .hero--shopper-journey .hero__icon {
           width: 310px;
-          bottom: -200px; } }
+          bottom: -200px;
+          left: 38.5%; } }
       @media screen and (max-width: 859px) {
         .hero--shopper-journey .hero__icon {
           display: none; } }
@@ -762,12 +763,25 @@ p.intro--home {
 .shopper-journey-info {
   padding-top: 9em;
   padding-bottom: 0; }
+  @media screen and (max-width: 859px) {
+    .shopper-journey-info {
+      padding-top: 6em; } }
+  @media screen and (max-width: 699px) {
+    .shopper-journey-info {
+      padding-top: 3em; } }
   .shopper-journey-info .container {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 699px) {
+      .shopper-journey-info .container {
+        flex-direction: column; } }
   .shopper-journey-info__image-block {
     width: 30%;
     margin-top: -3em; }
+    @media screen and (max-width: 699px) {
+      .shopper-journey-info__image-block {
+        width: 80%;
+        margin: 0 auto 10px; } }
     .shopper-journey-info__image-block img {
       width: 275px;
       margin: 0 auto; }
@@ -783,6 +797,10 @@ p.intro--home {
     width: 65%;
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 699px) {
+      .shopper-journey-info__stat-block {
+        width: 100%;
+        margin-bottom: 35px; } }
   .shopper-journey-info__stat {
     text-align: center;
     width: 33.33%;
@@ -798,6 +816,11 @@ p.intro--home {
       .shopper-journey-info__stat span:not(:first-child) {
         font-size: 14px;
         font-weight: 300; }
+    @media screen and (max-width: 699px) {
+      .shopper-journey-info__stat {
+        font-size: 17px;
+        line-height: 24px;
+        padding: 0 3%; } }
 
 .intro-wrap--shopper-journey {
   padding-top: 0; }
