@@ -14,14 +14,86 @@
         <p>To win local shoppers online, you need to reach them with the right content in the moments that matter.</p>
       </div>
       <div class="hero__icon">
-        <img src="img/icon-computer-home.svg" alt="Computer to Store">
+        <img src="img/icons/icon-directions.svg" alt="Shopper Journey Directions Icon">
       </div>
     </div>
   </section>
 
+  <section class="shopper-journey-info">
+    <div class="container">
+      <div class="shopper-journey-info__image-block">
+        <img src="img/icons/icon-shopper-journey.svg" alt="Shopper Journey Icon">
+        <p>Lastmile's "Inventory Everywhere" platform reaches your shoppers.</p>
+      </div>
+      <div class="shopper-journey-info__stat-block">
+        <div class="shopper-journey-info__stat">
+          <span><strong>90%</strong> of</span> retail sales are in physical stores
+          <span>- U.S. Census</span>
+        </div>
+        <div class="shopper-journey-info__stat">
+          <span><strong>50%</strong> of</span> mobile searches lead to a store visit in a day
+          <span>- Google</span>
+        </div>
+        <div class="shopper-journey-info__stat">
+          <span><strong>80%</strong> of</span> shoppers go online before in-store
+          <span>-PWC Total Retail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro-wrap intro-wrap--shopper-journey">
+    <div class="container">
+      <p class="intro intro--shopper-journey">We show customers in-stock products at stores closest to them at the moment they are poised to purchase. Our compelling page-one local search results and accompanying conversion effective landing pages turn your online shoppers into in-store buyers and product ambassadors.</p>
+    </div>
+  </section>
+
+  <section class="no-top-padding">
+    <div class="container">
+      <h2 class="heading-alt heading-alt--secondary heading-alt--tight">Our Proprietary Methodology</h2>
+      <p><strong>"Heart, Head, Hands and Voice</strong> approach first connects on an emotional level, then provides shoppers with the information and tools to make purchasing satisfying and easy.</p>
+    </div>
+  </section>
+
+  <section class="shopper-journey-chart">
+
+    <div class="shopper-journey-chart__column">
+      <img src="img/icons/icon-tag-filled.svg" alt="Icon">
+      <div class="shopper-journey-chart__content">
+        <h3>Give Shoppers an Excuse to Buy</h3>
+        <p>We matching both the context and intent of the shopper through thoughtful messaging and placement that speaks directly to their local needs.</p>
+      </div>
+    </div> 
+
+    <div class="shopper-journey-chart__column">
+      <img src="img/icons/icon-tag-filled.svg" alt="Icon">
+      <div class="shopper-journey-chart__content">
+        <h3>Give Shoppers an Excuse to Buy</h3>
+        <p>We matching both the context and intent of the shopper through thoughtful messaging and placement that speaks directly to their local needs.</p>
+      </div>
+    </div> 
+
+    <div class="shopper-journey-chart__column">
+      <img src="img/icons/icon-tag-filled.svg" alt="Icon">
+      <div class="shopper-journey-chart__content">
+        <h3>Give Shoppers an Excuse to Buy</h3>
+        <p>We matching both the context and intent of the shopper through thoughtful messaging and placement that speaks directly to their local needs.</p>
+      </div>
+    </div> 
+
+    <div class="shopper-journey-chart__column">
+      <img src="img/icons/icon-tag-filled.svg" alt="Icon">
+      <div class="shopper-journey-chart__content">
+        <h3>Give Shoppers an Excuse to Buy</h3>
+        <p>We matching both the context and intent of the shopper through thoughtful messaging and placement that speaks directly to their local needs.</p>
+      </div>
+    </div> 
+
+  </section>
+
   <section class="section--cta-block">
     <div class="container">
-      <h2 class="heading-alt">We motivate shoppers before they are poised to buy.</h2>
+      <h2 class="heading-alt heading-alt--tertiary">We motivate shoppers before they are poised to buy.</h2>
       <div class="flex-div">
         <p>Our platform reaches everywhere a shopper shows local intent including store finders search engines and paid channels, driving them to localized "digital store fronts" creating exceptional in-store revenue client ROI.</p>
         <a class="btn btn--tag">Our Solution</a>

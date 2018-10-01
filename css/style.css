@@ -5,6 +5,12 @@
   font-family: SharpSansBookItalic;
   src: url("../fonts/SharpSansDisplayNo1-BookItalic.woff2") format("woff2"), url("../fonts/SharpSansDisplayNo1-BookItalic.woff") format("woff"); }
 @font-face {
+  font-family: SharpSansLight;
+  src: url("../fonts/SharpSansDisplayNo1-Light.woff2") format("woff2"), url("../fonts/SharpSansDisplayNo1-Light.woff") format("woff"); }
+@font-face {
+  font-family: SharpSansLightItalic;
+  src: url("../fonts/SharpSansDisplayNo1-LightItalic.woff2") format("woff2"), url("../fonts/SharpSansDisplayNo1-LightItalic.woff") format("woff"); }
+@font-face {
   font-family: SharpSansBold;
   src: url("../fonts/SharpSansDisplayNo1-Bold.woff2") format("woff2"), url("../fonts/SharpSansDisplayNo1-Bold.woff") format("woff"); }
 @font-face {
@@ -41,6 +47,15 @@
 
 .no-bottom-padding {
   padding-bottom: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.no-top-margin {
+  margin-top: 0; }
+
+.no-bottom-margin {
+  margin-bottom: 0; }
 
 *,
 *::before,
@@ -95,6 +110,16 @@ img {
   .header,
   .footer {
     display: none; } }
+b,
+strong {
+  font-family: "SharpSansBold", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+i,
+em {
+  font-style: italic;
+  font-family: "SharpSansBookItalic", Helvetica, Arial, sans-serif; }
+
 h1,
 h2,
 h3,
@@ -113,6 +138,8 @@ p {
     color: #35b3a7;
     font-size: 22px;
     line-height: 26px; }
+    p.intro--shopper-journey {
+      color: #54338B; }
 
 h1 {
   font-family: "TiemposHeadline", Georgia, sans-serif;
@@ -131,10 +158,17 @@ h3 {
   text-transform: uppercase; }
 
 .heading-alt {
-  color: #ec4252;
   font-size: 42px;
   line-height: 47px;
   font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+  .heading-alt--primary {
+    color: #35b3a7; }
+  .heading-alt--secondary {
+    color: #330c48; }
+  .heading-alt--tertiary {
+    color: #ec4252; }
+  .heading-alt--tight {
+    margin-bottom: 12px; }
 
 .btn,
 a.btn {
@@ -534,6 +568,7 @@ section {
       position: absolute;
       z-index: 20;
       left: 440px;
+      width: 440px;
       bottom: -250px; }
       @media screen and (max-width: 1023px) {
         .hero--home .hero__icon {
@@ -544,8 +579,8 @@ section {
           display: none; } }
   .hero--shopper-journey {
     background-image: url("../img/banners/banner-clothes-dark.jpg");
-    -webkit-filter: contrast(3);
-    filter: contrast(3); }
+    -webkit-filter: contrast(2);
+    filter: contrast(2); }
     .hero--shopper-journey::after {
       content: '';
       position: absolute;
@@ -555,13 +590,16 @@ section {
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(53, 179, 167, 0.5); }
+      background: rgba(36, 120, 112, 0.6); }
     .hero--shopper-journey .hero__icon {
       display: block;
       position: absolute;
       z-index: 20;
-      left: 440px;
-      bottom: -250px; }
+      left: 37%;
+      bottom: -175px; }
+      .hero--shopper-journey .hero__icon img {
+        width: 460px;
+        height: auto; }
       @media screen and (max-width: 1023px) {
         .hero--shopper-journey .hero__icon {
           width: 310px;
@@ -721,5 +759,69 @@ p.intro--home {
       height: 120%;
       width: 100%;
       color: #35b3a7; }
+
+.shopper-journey-info {
+  padding-top: 9em;
+  padding-bottom: 0; }
+  .shopper-journey-info .container {
+    display: flex;
+    justify-content: space-between; }
+  .shopper-journey-info__image-block {
+    width: 30%;
+    margin-top: -3em; }
+    .shopper-journey-info__image-block img {
+      width: 275px;
+      margin: 0 auto; }
+    .shopper-journey-info__image-block p {
+      padding-top: 30px;
+      text-align: center;
+      font-family: "SharpSansBook", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      color: #35b3a7;
+      font-size: 22px;
+      line-height: 28px; }
+  .shopper-journey-info__stat-block {
+    width: 65%;
+    display: flex;
+    justify-content: space-between; }
+  .shopper-journey-info__stat {
+    text-align: center;
+    width: 33.33%;
+    padding: 0 5%;
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #999999;
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+    .shopper-journey-info__stat span {
+      display: block; }
+      .shopper-journey-info__stat span:not(:first-child) {
+        font-size: 14px;
+        font-weight: 300; }
+
+.intro-wrap--shopper-journey {
+  padding-top: 0; }
+
+.shopper-journey-chart {
+  display: flex;
+  justify-content: space-between; }
+  .shopper-journey-chart__column {
+    width: 24.5%; }
+    .shopper-journey-chart__column img {
+      margin: 0 auto 20px; }
+  .shopper-journey-chart__content {
+    background: #ebe8df;
+    padding: 30px;
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+    .shopper-journey-chart__content h3 {
+      margin-bottom: 8px;
+      text-transform: none;
+      color: #54338B;
+      font-size: 26px;
+      line-height: 32px; }
+    .shopper-journey-chart__content p:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

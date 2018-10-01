@@ -12,6 +12,18 @@
 }
 
 @font-face {
+  font-family: SharpSansLight;
+  src: url('../fonts/SharpSansDisplayNo1-Light.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: SharpSansLightItalic;
+  src: url('../fonts/SharpSansDisplayNo1-LightItalic.woff2') format('woff2'), 
+    url('../fonts/SharpSansDisplayNo1-LightItalic.woff') format('woff');
+}
+
+@font-face {
   font-family: SharpSansBold;
   src: url('../fonts/SharpSansDisplayNo1-Bold.woff2') format('woff2'), 
     url('../fonts/SharpSansDisplayNo1-Bold.woff') format('woff');

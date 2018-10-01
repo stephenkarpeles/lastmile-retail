@@ -1,3 +1,15 @@
+b,
+strong {
+  font-family: $sans-serif-bold;
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+  font-family: $sans-serif-italic;
+}
+
 h1, 
 h2, 
 h3,
@@ -18,6 +30,10 @@ p {
     color: $primary-color;
     font-size: 22px;
     line-height: 26px;
+
+    &--shopper-journey {
+      color: $quaternary-color;
+    }
   }
 }
 
@@ -41,8 +57,23 @@ h3 {
 }
 
 .heading-alt {
-  color: $tertiary-color;
   font-size: 42px;
   line-height: 47px;
   font-family: $sans-serif-semibold;
+
+  &--primary {
+    color: $primary-color;
+  }
+
+  &--secondary {
+    color: $secondary-color;
+  }
+
+  &--tertiary {
+    color: $tertiary-color;
+  }
+
+  &--tight {
+    margin-bottom: 12px;
+  }
 }

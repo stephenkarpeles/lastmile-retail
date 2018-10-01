@@ -1,0 +1,95 @@
+.shopper-journey-info {
+	padding-top: 9em;
+	padding-bottom: 0;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__image-block {
+		width: 30%;
+		margin-top: -3em;
+
+		img {
+			width: 275px;
+			margin: 0 auto;
+		}
+
+		p {
+			padding-top: 30px;
+			text-align: center;
+			font-family: $sans-serif;
+			font-weight: 300;
+			color: $primary-color;
+			font-size: 22px;
+			line-height: 28px;
+		}
+	}
+
+	&__stat-block {
+		width: 65%;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__stat {
+		text-align: center;
+		width: 33.33%;
+		padding: 0 5%;
+		position: relative;
+		font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: $gray-2;
+    font-family: $sans-serif-semibold;
+
+    span {
+    	display: block;
+
+    	&:not(:first-child) {
+    	  font-size: 14px;
+    	  font-weight: 300;
+      }
+    }
+	}
+}
+
+.intro-wrap {
+	&--shopper-journey {
+		padding-top: 0;
+	}
+}
+
+.shopper-journey-chart {
+	display: flex;
+	justify-content: space-between;
+
+	&__column {
+		width: 24.5%;
+
+		img {
+			margin: 0 auto 20px;
+		}
+	}
+
+	&__content {
+		background: $color-light;
+		padding: 30px;
+		font-family: $sans-serif-semibold;
+
+		h3 {
+			margin-bottom: 8px;
+			text-transform: none;
+			color: $quaternary-color;
+			font-size: 26px;
+			line-height: 32px;
+		}
+
+		p:last-of-type {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+}

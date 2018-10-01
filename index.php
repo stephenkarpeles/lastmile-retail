@@ -14,7 +14,7 @@
         <p>Lastmile bridges the gap between the 80% of shoppers that research online and the 90% of sales that happen offline.</p>
       </div>
       <div class="hero__icon">
-      	<img src="img/icon-computer-home.svg" alt="Computer to Store">
+      	<img src="img/icons/icon-computer-home.svg" alt="Computer to Store">
       </div>
     </div>
   </section>
@@ -68,7 +68,7 @@
 
   <section class="section--cta-block">
     <div class="container">
-      <h2 class="heading-alt">From browse to buy, we bring your local advantage online.</h2>
+      <h2 class="heading-alt heading-alt--tertiary">From browse to buy, we bring your local advantage online.</h2>
       <div class="flex-div">
         <p>We understand the mindset, motivations and needs of local shoppers and give them what they demand—an easy way to find and buy in-stock nearby products and services online.</p>
         <a class="btn btn--tag">Shopper Journey</a>

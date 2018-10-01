@@ -2,12 +2,12 @@
 	background: $secondary-color;	
 	font-size: 14px;
 	line-height: 17px;
-	color: $text-color-light;
+	color: $color-light;
 	font-family: $sans-serif-semibold;
 	font-weight: 600;
 
 	a {
-		color: $text-color-light;
+		color: $color-light;
 	}
 
 	@include mq(ipad, 'max-width') {
