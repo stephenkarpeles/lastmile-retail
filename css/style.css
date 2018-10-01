@@ -132,12 +132,11 @@ p {
 p {
   padding-bottom: 20px;
   font-size: 20px;
-  line-height: 27px; }
+  line-height: 1.375; }
   p.intro {
     font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
     color: #35b3a7;
-    font-size: 22px;
-    line-height: 26px; }
+    font-size: 22px; }
     p.intro--shopper-journey {
       color: #54338B; }
 
@@ -775,7 +774,7 @@ p.intro--home {
     .shopper-journey-info__image-block p {
       padding-top: 30px;
       text-align: center;
-      font-family: "SharpSansBook", Helvetica, Arial, sans-serif;
+      font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
       font-weight: 300;
       color: #35b3a7;
       font-size: 22px;
@@ -805,15 +804,29 @@ p.intro--home {
 
 .shopper-journey-chart {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .shopper-journey-chart__column {
-    width: 24.5%; }
+    width: 24.5%;
+    background: #ebe8df; }
+    .shopper-journey-chart__column .shopper-journey-chart__img-wrap {
+      background: white;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      @media screen and (max-width: 639px) {
+        .shopper-journey-chart__column .shopper-journey-chart__img-wrap {
+          height: 160px; } }
     .shopper-journey-chart__column img {
-      margin: 0 auto 20px; }
+      margin: auto;
+      width: 100px; }
+    .shopper-journey-chart__column:last-child img {
+      width: 60px; }
   .shopper-journey-chart__content {
-    background: #ebe8df;
-    padding: 30px;
-    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+    padding: 30px; }
     .shopper-journey-chart__content h3 {
       margin-bottom: 8px;
       text-transform: none;
@@ -823,5 +836,13 @@ p.intro--home {
     .shopper-journey-chart__content p:last-of-type {
       padding-bottom: 0;
       margin-bottom: 0; }
+  @media screen and (max-width: 859px) {
+    .shopper-journey-chart__column {
+      width: 49%;
+      margin-bottom: 35px; } }
+  @media screen and (max-width: 639px) {
+    .shopper-journey-chart__column {
+      width: 100%;
+      margin: 0 5% 35px; } }
 
 /*# sourceMappingURL=style.css.map */

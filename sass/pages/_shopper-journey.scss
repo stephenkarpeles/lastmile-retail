@@ -19,7 +19,7 @@
 		p {
 			padding-top: 30px;
 			text-align: center;
-			font-family: $sans-serif;
+			font-family: $sans-serif-semibold;
 			font-weight: 300;
 			color: $primary-color;
 			font-size: 22px;
@@ -65,19 +65,40 @@
 .shopper-journey-chart {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 	&__column {
 		width: 24.5%;
+		background: $color-light;
+
+		.shopper-journey-chart__img-wrap {
+			background: white;
+			height: 180px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			@include mq(tablet, 'max-width') {
+				height: 160px;
+			}
+		}
 
 		img {
-			margin: 0 auto 20px;
+			margin: auto;
+			width: 100px;
+		}
+
+		&:last-child {
+			img {
+				width: 60px;
+			}
 		}
 	}
 
 	&__content {
-		background: $color-light;
-		padding: 30px;
 		font-family: $sans-serif-semibold;
+		padding: 30px;
 
 		h3 {
 			margin-bottom: 8px;
@@ -91,5 +112,19 @@
 			padding-bottom: 0;
 			margin-bottom: 0;
 		}
+	}
+
+	@include mq(desktop-narrow, 'max-width') {
+		&__column {
+      width: 49%;
+      margin-bottom: 35px;
+    }
+	}
+
+	@include mq(tablet, 'max-width') {
+		&__column {
+      width: 100%;
+      margin: 0 5% 35px;
+    }
 	}
 }
