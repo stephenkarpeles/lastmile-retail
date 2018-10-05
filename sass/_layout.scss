@@ -12,3 +12,18 @@
 section {
 	padding: $section-padding 0;
 }
+
+.grid {
+	display: flex;
+	justify-content: space-between;
+
+	.col {
+		&--one-half {
+			width: 48%;
+
+			@include mq(tablet, 'max-width') {
+				width: 100%;
+			}
+		}
+	}
+}

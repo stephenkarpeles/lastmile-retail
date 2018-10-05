@@ -37,7 +37,7 @@
   }
   
   &--home {
-  	background-image: url('../img/banners/hero-home.png');
+  	background-image: url('../img/banners/banner-home.png');
 
     #{$self}__icon {
       display: block;
@@ -161,8 +161,60 @@
     }    
   }
 
+  &--about {
+    background-image: url('../img/banners/banner-about.jpg');
+    background-position: center 90%;
+    padding: 200px 0 100px;
+    margin-bottom: 60px;
+
+    @include mq(desktop-narrow, 'max-width') {
+      padding: 80px 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba($tertiary-color, .6);
+    }
+
+    #{$self}__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      right: -70px;
+      bottom: -425px;
+
+      img {
+        width: 550px;
+        height: auto;
+      }
+
+      @include mq(container-max, 'max-width') {
+        width: 420px;
+        right: 0;
+        bottom: -250px;
+      }
+
+      @include mq(desktop, 'max-width') {
+        width: 380px;
+        right: -20px;
+        bottom: -190px;
+      }
+
+      @include mq(desktop-narrow, 'max-width') {
+        display: none;
+      }
+    }    
+  }
+
   &--shopper-journey {
-    background-image: url('../img/banners/banner-clothes-dark.jpg');
+    background-image: url('../img/banners/banner-shopper-journey.jpg');
 
     &::after {
       content: '';

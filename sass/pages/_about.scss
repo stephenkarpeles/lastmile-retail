@@ -1,0 +1,34 @@
+.about-intro-block {
+	&__image-block {
+	  width: 35%;
+		margin-top: -2.5em;
+
+		@include mq(desktop-narrow, 'max-width') {
+			width: 80%;
+			margin: -2.5em auto 10px;
+		}
+
+		img {
+			width: 250px;
+			margin: 0 auto;
+
+			@include mq(desktop-narrow, 'max-width') {
+				width: 220px;
+			}
+		}
+
+		p {
+			padding-top: 30px;
+			text-align: left;
+			font-family: $sans-serif-semibold;
+			font-weight: 300;
+			color: $primary-color;
+			font-size: 22px;
+			line-height: 28px;
+
+			@include mq(desktop-narrow, 'max-width') {
+				text-align: center;
+			}
+		}
+	}
+}

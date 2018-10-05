@@ -35,6 +35,11 @@ p {
       color: $quaternary-color;
     }
   }
+
+  &.paragraph-alt {
+    font-family: $sans-serif-semibold;
+    font-size: 22px;
+  }
 }
 
 h1 {
