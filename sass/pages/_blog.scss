@@ -1,0 +1,126 @@
+.post-preview {
+	padding-top: 0;
+
+	&__image {
+		background-size: cover;
+		background-position: center center;
+		height: 260px;
+		width: 100%;
+
+		@include mq(ipad, 'max-width') {
+			height: 200px;
+		}
+	}
+
+	&__info {
+		padding-top: 25px;
+		margin-bottom: 0;
+		padding-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+
+		@include mq(ipad, 'max-width') {
+			flex-direction: column;
+		}
+	}
+
+	&__meta-block {
+		width: calc(100% - 300px); // subtract width of social share
+
+		@include mq(ipad, 'max-width') {
+			width: 100%;
+		}
+	}
+
+	&__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: $quaternary-color;
+    font-family: $serif-headline;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    line-height: 1.25;
+	}
+
+	&__subheading {
+		margin: 0;
+		padding-bottom: 1px;
+    font-size: 20px;
+    font-family: $sans-serif-semibold;
+	}
+
+	&__meta-info {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	&__date,
+	&__author {
+    font-size: 17px;
+    font-family: $sans-serif-light;
+	}
+
+	&__date {
+		position: relative;
+		margin-right: 10px;
+
+		&:after {
+			content: '';
+	    position: absolute;
+	    height: 14px;
+	    width: 1px;
+	    background: #777;
+	    top: 4px;
+	    right: -9px;
+		}
+	}
+
+	&__share-block {
+		display: flex;
+		justify-content: flex-end;
+		width: 300px;
+
+		@include mq(ipad, 'max-width') {
+			padding-top: 22px;
+			width: auto;
+			justify-content: flex-start;
+		}
+
+		span {
+			text-transform: lowercase;
+			display: inline-block;
+			font-family: $sans-serif-semibold;
+			color: $quaternary-color;
+			font-size: 20px;
+			margin-top: 8px;
+
+			@include mq(ipad, 'max-width') {
+				margin-top: 3px;
+			}
+		}    
+
+		ul {
+			padding: 0;
+			margin: 0 0 0 25px;
+
+			@include mq(ipad, 'max-width') {
+				margin: 0 0 0 10px;
+			}
+		}
+
+		li {
+			display: inline-block;
+			margin-left: 12px;
+		}
+
+		a,
+		i {
+			font-size: 32px;
+			color: $color-light;
+
+			@include mq(ipad, 'max-width') {
+				font-size: 24px;
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+.contact-intro-block {
+	&__image-block {
+	  width: 30%;
+		margin-top: -2.5em;
+
+		@include mq(desktop-narrow, 'max-width') {
+			width: 80%;
+			margin: -2.5em auto 10px;
+		}
+
+		img {
+			width: 250px;
+			margin: 0 auto;
+
+			@include mq(desktop-narrow, 'max-width') {
+				width: 220px;
+			}
+		}
+
+		p {
+			padding-top: 30px;
+			text-align: left;
+			font-family: $sans-serif-semibold;
+			font-weight: 300;
+			color: $primary-color;
+			font-size: 22px;
+			line-height: 28px;
+
+			@include mq(desktop-narrow, 'max-width') {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.contact-form {
+	padding: 25px 0;
+
+	input[type="text"],
+	textarea {
+		background: $color-light-green;
+		border: 0;
+		padding: 7px 10px;
+		width: calc(80% - 130px);
+		max-width: 100%;
+		font-size: 19px;
+
+		@include mq(desktop-narrow, 'max-width') {
+      width: calc(90% - 130px);
+		}
+
+		@include mq(tablet, 'max-width') {
+			width: 100%;
+		}
+	}
+
+	input[type="submit"] {
+		margin-top: 5px;
+	  border: none;
+	  font-size: 20px;
+	}
+
+	label {
+		margin-top: 6px;
+    line-height: 1;
+    width: 130px;
+    text-transform: lowercase;
+    font-family: $sans-serif-semibold;
+    color: $gray-2;
+    font-size: 19px;
+
+    @include mq(tablet, 'max-width') {
+			margin-bottom: 8px;
+		}
+	}
+
+	.form-row {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 14px;
+
+		&--submit {
+			justify-content: flex-end;
+			width: 80%;
+
+			@include mq(desktop-narrow, 'max-width') {
+	      width: 90%;
+			}
+
+			@include mq(desktop-narrow, 'max-width') {
+	      width: 90%;
+			}
+
+			@include mq(tablet, 'max-width') {
+				width: 100%;
+			}
+		}
+
+		@include mq(tablet, 'max-width') {
+			flex-direction: column;
+		}
+	}
+}

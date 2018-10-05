@@ -30,7 +30,8 @@ p {
     color: $primary-color;
     font-size: 22px;
 
-    &--shopper-journey {
+    &--shopper-journey,
+    &--contact {
       color: $quaternary-color;
     }
   }

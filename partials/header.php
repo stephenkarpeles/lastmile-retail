@@ -60,8 +60,8 @@
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/shopper-journey.php">Shopper Journey</a></li>
-                <li><a href="#">Menu Item 3</a></li>
-                <li><a href="#">Menu Item 4</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
               <a class="btn btn--primary btn--medium">Demo</a>
             </div>

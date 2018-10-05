@@ -9,6 +9,7 @@
   align-items: center;
   padding: 80px 0;
   position: relative;
+  margin-bottom: 20px;
 
   .container {
     z-index: 5;
@@ -57,10 +58,111 @@
     }
   }
 
+  &--blog {
+    background-image: url('../img/banners/banner-blog.jpg');
+    padding: 130px 0;
+    margin-bottom: 60px;
+
+    @include mq(desktop-narrow, 'max-width') {
+      padding: 80px 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(white, .6);
+    }
+
+    h1,
+    p {
+      color: $secondary-color;
+    }
+
+    #{$self}__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      left: 60%;
+      bottom: -65px;
+
+      img {
+        width: 500px;
+        height: auto;
+      }
+
+      @include mq(desktop, 'max-width') {
+        width: 310px;
+      }
+
+      @include mq(desktop-narrow, 'max-width') {
+        display: none;
+      }
+    }    
+  }
+
+  &--contact {
+    background-image: url('../img/banners/banner-contact.jpg');
+    background-position: center center;
+    padding: 200px 0 80px;
+    margin-bottom: 60px;
+
+    @include mq(desktop-narrow, 'max-width') {
+      padding: 80px 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(white, .6);
+    }
+
+    h1,
+    p {
+      color: $secondary-color;
+    }
+
+    #{$self}__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      right: -70px;
+      bottom: -275px;
+
+      img {
+        width: 600px;
+        height: auto;
+      }
+
+      @include mq(container-max, 'max-width') {
+        width: 500px;
+        bottom: -235px;
+      }
+
+      @include mq(desktop, 'max-width') {
+        width: 410px;
+        right: -20px;
+      }
+
+      @include mq(desktop-narrow, 'max-width') {
+        display: none;
+      }
+    }    
+  }
+
   &--shopper-journey {
     background-image: url('../img/banners/banner-clothes-dark.jpg');
-    -webkit-filter: contrast(2);
-    filter: contrast(2);
 
     &::after {
       content: '';

@@ -137,7 +137,7 @@ p {
     font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
     color: #35b3a7;
     font-size: 22px; }
-    p.intro--shopper-journey {
+    p.intro--shopper-journey, p.intro--contact {
       color: #54338B; }
 
 h1 {
@@ -542,7 +542,8 @@ section {
   display: flex;
   align-items: center;
   padding: 80px 0;
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
   .hero .container {
     z-index: 5; }
   .hero h1,
@@ -576,10 +577,84 @@ section {
       @media screen and (max-width: 859px) {
         .hero--home .hero__icon {
           display: none; } }
+  .hero--blog {
+    background-image: url("../img/banners/banner-blog.jpg");
+    padding: 130px 0;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 859px) {
+      .hero--blog {
+        padding: 80px 0; } }
+    .hero--blog::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.6); }
+    .hero--blog h1,
+    .hero--blog p {
+      color: #330c48; }
+    .hero--blog .hero__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      left: 60%;
+      bottom: -65px; }
+      .hero--blog .hero__icon img {
+        width: 500px;
+        height: auto; }
+      @media screen and (max-width: 1023px) {
+        .hero--blog .hero__icon {
+          width: 310px; } }
+      @media screen and (max-width: 859px) {
+        .hero--blog .hero__icon {
+          display: none; } }
+  .hero--contact {
+    background-image: url("../img/banners/banner-contact.jpg");
+    background-position: center center;
+    padding: 200px 0 80px;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 859px) {
+      .hero--contact {
+        padding: 80px 0; } }
+    .hero--contact::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.6); }
+    .hero--contact h1,
+    .hero--contact p {
+      color: #330c48; }
+    .hero--contact .hero__icon {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      right: -70px;
+      bottom: -275px; }
+      .hero--contact .hero__icon img {
+        width: 600px;
+        height: auto; }
+      @media screen and (max-width: 1099px) {
+        .hero--contact .hero__icon {
+          width: 500px;
+          bottom: -235px; } }
+      @media screen and (max-width: 1023px) {
+        .hero--contact .hero__icon {
+          width: 410px;
+          right: -20px; } }
+      @media screen and (max-width: 859px) {
+        .hero--contact .hero__icon {
+          display: none; } }
   .hero--shopper-journey {
-    background-image: url("../img/banners/banner-clothes-dark.jpg");
-    -webkit-filter: contrast(2);
-    filter: contrast(2); }
+    background-image: url("../img/banners/banner-clothes-dark.jpg"); }
     .hero--shopper-journey::after {
       content: '';
       position: absolute;
@@ -759,6 +834,175 @@ p.intro--home {
       height: 120%;
       width: 100%;
       color: #35b3a7; }
+
+.post-preview {
+  padding-top: 0; }
+  .post-preview__image {
+    background-size: cover;
+    background-position: center center;
+    height: 260px;
+    width: 100%; }
+    @media screen and (max-width: 767px) {
+      .post-preview__image {
+        height: 200px; } }
+  .post-preview__info {
+    padding-top: 25px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .post-preview__info {
+        flex-direction: column; } }
+  .post-preview__meta-block {
+    width: calc(100% - 300px); }
+    @media screen and (max-width: 767px) {
+      .post-preview__meta-block {
+        width: 100%; } }
+  .post-preview__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #54338B;
+    font-family: "TiemposHeadline", Georgia, sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    line-height: 1.25; }
+  .post-preview__subheading {
+    margin: 0;
+    padding-bottom: 1px;
+    font-size: 20px;
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif; }
+  .post-preview__meta-info {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .post-preview__date, .post-preview__author {
+    font-size: 17px;
+    font-family: "SharpSansLight", Helvetica, Arial, sans-serif; }
+  .post-preview__date {
+    position: relative;
+    margin-right: 10px; }
+    .post-preview__date:after {
+      content: '';
+      position: absolute;
+      height: 14px;
+      width: 1px;
+      background: #777;
+      top: 4px;
+      right: -9px; }
+  .post-preview__share-block {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px; }
+    @media screen and (max-width: 767px) {
+      .post-preview__share-block {
+        padding-top: 22px;
+        width: auto;
+        justify-content: flex-start; } }
+    .post-preview__share-block span {
+      text-transform: lowercase;
+      display: inline-block;
+      font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+      color: #54338B;
+      font-size: 20px;
+      margin-top: 8px; }
+      @media screen and (max-width: 767px) {
+        .post-preview__share-block span {
+          margin-top: 3px; } }
+    .post-preview__share-block ul {
+      padding: 0;
+      margin: 0 0 0 25px; }
+      @media screen and (max-width: 767px) {
+        .post-preview__share-block ul {
+          margin: 0 0 0 10px; } }
+    .post-preview__share-block li {
+      display: inline-block;
+      margin-left: 12px; }
+    .post-preview__share-block a,
+    .post-preview__share-block i {
+      font-size: 32px;
+      color: #ebe8df; }
+      @media screen and (max-width: 767px) {
+        .post-preview__share-block a,
+        .post-preview__share-block i {
+          font-size: 24px; } }
+
+.contact-intro-block__image-block {
+  width: 30%;
+  margin-top: -2.5em; }
+  @media screen and (max-width: 859px) {
+    .contact-intro-block__image-block {
+      width: 80%;
+      margin: -2.5em auto 10px; } }
+  .contact-intro-block__image-block img {
+    width: 250px;
+    margin: 0 auto; }
+    @media screen and (max-width: 859px) {
+      .contact-intro-block__image-block img {
+        width: 220px; } }
+  .contact-intro-block__image-block p {
+    padding-top: 30px;
+    text-align: left;
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #35b3a7;
+    font-size: 22px;
+    line-height: 28px; }
+    @media screen and (max-width: 859px) {
+      .contact-intro-block__image-block p {
+        text-align: center; } }
+
+.contact-form {
+  padding: 25px 0; }
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    background: #edf8f7;
+    border: 0;
+    padding: 7px 10px;
+    width: calc(80% - 130px);
+    max-width: 100%;
+    font-size: 19px; }
+    @media screen and (max-width: 859px) {
+      .contact-form input[type="text"],
+      .contact-form textarea {
+        width: calc(90% - 130px); } }
+    @media screen and (max-width: 639px) {
+      .contact-form input[type="text"],
+      .contact-form textarea {
+        width: 100%; } }
+  .contact-form input[type="submit"] {
+    margin-top: 5px;
+    border: none;
+    font-size: 20px; }
+  .contact-form label {
+    margin-top: 6px;
+    line-height: 1;
+    width: 130px;
+    text-transform: lowercase;
+    font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+    color: #999999;
+    font-size: 19px; }
+    @media screen and (max-width: 639px) {
+      .contact-form label {
+        margin-bottom: 8px; } }
+  .contact-form .form-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 14px; }
+    .contact-form .form-row--submit {
+      justify-content: flex-end;
+      width: 80%; }
+      @media screen and (max-width: 859px) {
+        .contact-form .form-row--submit {
+          width: 90%; } }
+      @media screen and (max-width: 859px) {
+        .contact-form .form-row--submit {
+          width: 90%; } }
+      @media screen and (max-width: 639px) {
+        .contact-form .form-row--submit {
+          width: 100%; } }
+    @media screen and (max-width: 639px) {
+      .contact-form .form-row {
+        flex-direction: column; } }
 
 .shopper-journey-info {
   padding-top: 9em;
