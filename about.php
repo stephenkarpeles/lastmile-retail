@@ -35,14 +35,33 @@
     </div>
   </section>
 
-  <section class="no-top-padding">
+  <section class="no-padding">
     <div class="container">
-      <div class="grid">
-        <div class="col col--one-half">
-          Test
+      <div class="grid grid--about">
+        <div class="col col--one-half col--about-grid">
+          <h3>Localizes</h3>
+          <p>Transforms local content such as inventory, promotions, services and staff bios into landing pages, feeds and ads.</p>
         </div>
-        <div class="col col--one-half">
-          Test
+        <div class="col col--one-half col--about-grid">
+          <h3>Connects</h3>
+          <p>Local shoppers have access to the information, tools and innovative services needed to buy your offerings online or in-store.</p>
+        </div>
+        <div class="col col--one-half col--about-grid">
+          <h3>Connects</h3>
+          <p>Local shoppers have access to the information, tools and innovative services needed to buy your offerings online or in-store.</p>
+        </div>
+        <div class="col col--one-half col--about-grid">
+          <h3>Measures</h3>
+          <p>Tracks digital impact on in-store sales and visits. Captures local preference and audiences at the product level.</p>
+        </div>
+        <div class="col col--one-half col--about-grid">
+          <h3>Promotes</h3>
+          <p>Syndicates local content to nearby shoppers in the channels they are using such as search, store locators and web directories.</p>
+        </div>
+        <div class="col col--one-half col--about-grid">
+          <div class="about-download-block">
+            <p>Download our collection of sample reports &amp; ranking comparisons</p>
+          </div>
         </div>
       </div>
     </div>

@@ -267,9 +267,10 @@ section {
 
 .grid {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .grid .col--one-half {
-    width: 48%; }
+    width: 44%; }
     @media screen and (max-width: 639px) {
       .grid .col--one-half {
         width: 100%; } }
@@ -694,14 +695,14 @@ section {
         height: auto; }
       @media screen and (max-width: 1099px) {
         .hero--about .hero__icon {
-          width: 420px;
+          width: 480px;
           right: 0;
-          bottom: -250px; } }
+          bottom: -300px; } }
       @media screen and (max-width: 1023px) {
         .hero--about .hero__icon {
-          width: 380px;
+          width: 440px;
           right: -20px;
-          bottom: -190px; } }
+          bottom: -270px; } }
       @media screen and (max-width: 859px) {
         .hero--about .hero__icon {
           display: none; } }
@@ -783,6 +784,9 @@ section {
 .about-intro-block__image-block {
   width: 35%;
   margin-top: -2.5em; }
+  @media screen and (max-width: 1099px) {
+    .about-intro-block__image-block {
+      width: 45%; } }
   @media screen and (max-width: 859px) {
     .about-intro-block__image-block {
       width: 80%;
@@ -804,6 +808,31 @@ section {
     @media screen and (max-width: 859px) {
       .about-intro-block__image-block p {
         text-align: center; } }
+
+.col--about-grid h3 {
+  color: #ec4252;
+  margin-bottom: 5px;
+  position: relative; }
+  .col--about-grid h3:before {
+    background-image: url(../img/icons/icon-marker-red.svg);
+    background-size: 28px 35px;
+    display: inline-block;
+    width: 28px;
+    height: 35px;
+    content: '';
+    position: absolute;
+    left: -42px; }
+.col--about-grid p {
+  font-size: 22px;
+  font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+  color: #54338B; }
+@media screen and (max-width: 1099px) {
+  .col--about-grid {
+    padding-left: 42px; } }
+.col--about-grid .about-download-block p {
+  font-size: 22px;
+  font-family: "SharpSansSemibold", Helvetica, Arial, sans-serif;
+  color: #35b3a7; }
 
 .post-preview {
   padding-top: 0; }

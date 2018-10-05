@@ -196,15 +196,15 @@
       }
 
       @include mq(container-max, 'max-width') {
-        width: 420px;
+        width: 480px;
         right: 0;
-        bottom: -250px;
+        bottom: -300px;
       }
 
       @include mq(desktop, 'max-width') {
-        width: 380px;
+        width: 440px;
         right: -20px;
-        bottom: -190px;
+        bottom: -270px;
       }
 
       @include mq(desktop-narrow, 'max-width') {

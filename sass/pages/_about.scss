@@ -3,6 +3,10 @@
 	  width: 35%;
 		margin-top: -2.5em;
 
+		@include mq(container-max, 'max-width') {
+			width: 45%;
+		}
+
 		@include mq(desktop-narrow, 'max-width') {
 			width: 80%;
 			margin: -2.5em auto 10px;
@@ -29,6 +33,43 @@
 			@include mq(desktop-narrow, 'max-width') {
 				text-align: center;
 			}
+		}
+	}
+}
+
+.col--about-grid {
+	h3 {
+		color: $tertiary-color;
+		margin-bottom: 5px;
+		position: relative;
+
+		&:before {
+			background-image: url(../img/icons/icon-marker-red.svg);
+	    background-size: 28px 35px;
+	    display: inline-block;
+	    width: 28px; 
+	    height: 35px;
+	    content:'';
+			position: absolute;
+			left: -42px;
+		}
+	}
+
+	p {
+		font-size: 22px;
+		font-family: $sans-serif-semibold;
+		color: $quaternary-color;
+	}
+
+	@include mq(container-max, 'max-width') {
+    padding-left: 42px; // equal to 'left' value on h3:before pseudo element
+	}
+
+	.about-download-block {
+		p {
+			font-size: 22px;
+			font-family: $sans-serif-semibold;
+			color: $primary-color;
 		}
 	}
 }

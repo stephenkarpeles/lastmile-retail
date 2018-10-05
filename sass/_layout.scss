@@ -16,10 +16,11 @@ section {
 .grid {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 	.col {
 		&--one-half {
-			width: 48%;
+			width: 44%;
 
 			@include mq(tablet, 'max-width') {
 				width: 100%;
